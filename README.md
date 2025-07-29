@@ -1,49 +1,40 @@
-# Student Registration Form
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form action="/submit" method="post">
 
-This project is a basic HTML form that allows students to register by entering their personal and academic details. The form includes fields for name, roll number, email, gender selection, and branch selection.
+    <label for ="name">Student Name:</label>
+    <input type ="text" id="name" name="student_name" required><br><br>
 
-## 🚀 Features
+    <label for ="roll no">Roll Number:</label>
+    <input type="text" id="roll no" name="roll no" required><br><br>
 
-- Text input fields for name, roll number, and email
-- Email input uses built-in HTML5 validation
-- Gender selection using radio buttons
-- Branch selection using a dropdown menu
-- Form submission using POST method
+    <label for ="email">Email:</label>
+    <input type="text" id ="Email" name="Email" required><br><br>
 
-## 📄 Form Fields
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="Female" name="gender" value="Female" required>
+    <label for="Female">Female</label>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label><br><br>
 
-| Field         | Type         | Description                        |
-|---------------|--------------|------------------------------------|
-| Student Name  | Text         | Full name of the student           |
-| Roll Number   | Text         | Unique student roll number         |
-| Email         | Email        | Student's email address            |
-| Gender        | Radio Button | Select Male, Female, or Other      |
-| Branch        | Dropdown     | Choose from available branches     |
+    <label for="branch">Branch:</label>
+    <select id="branch" name="branch" required>
+        <option value="">--SELECT BRANCH--</option>
+        <option value="IT">Inf</option>
+        <option value="ece">Electric</option>
+        </select><br><br>
 
-## 📤 Form Submission
+        <button type="submit">Submit</button>
 
-- **Method**: POST  
-- **Action URL**: `/submit` (You need to implement this server-side route)
-
-## 🛠 How to Use
-
-1. Open `index.html` in any web browser.
-2. Fill in the student details.
-3. Click **Submit**.
-4. The form data will be sent to the `/submit` endpoint.
-
-> ⚠️ Note: This form requires a backend server to handle form submissions at the `/submit` URL.
-
-## 🧪 Example Branch Options
-
-- Information Technology (`IT`)
-- Electronics and Communication Engineering (`ECE`)
-
-## ✅ Browser Compatibility
-
-This form uses standard HTML5 and works in all modern browsers.
-
-## 📁 File Structure
+    </form>
+</body>
+</html>
 
 
 
