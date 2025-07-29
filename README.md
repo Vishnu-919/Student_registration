@@ -43,5 +43,5 @@ This project is a basic HTML form that allows students to register by entering t
 
 This form uses standard HTML5 and works in all modern browsers.
 
-## 📁 File Structure
+
 
